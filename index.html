@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="column">
+
+  <header class="row spacebetween-center border-3px border-radius-10px" id="header">
+    <img id="logo" src="/images/logo-bonus.svg" alt="logo">
+    <div class="white-bg border-radius-10px" id="score-tab">
+      <span class="dark-blue" id="score">score</span>
+      <h1 class="dark-blue" id="score-value">0</h1>
+    </div>
+  </header>
+
+  <main class="main center-norepeat" id="options">
+    <div class="option center-norepeat white-bg" id="scissors"></div>
+    <div class="option center-norepeat white-bg" id="spock"></div>
+    <div class="option center-norepeat white-bg" id="paper"></div>
+    <div class="option center-norepeat white-bg" id="lizard"></div>
+    <div class="option center-norepeat white-bg" id="rock"></div>
+  </main>
+
+  <div onclick="visibleBTN()" class="border-3px border-radius-10px white" id="rules-btn">RULES</div>
+  <aside class="notvisible column spacebetween-center center-norepeat white-bg border-radius-10px" id="rules">
+    <h2 class="dark-blue" id="rules-text">RULES</h2>
+    <div onclick="visibleBTN()" class="center-norepeat border-3px border-radius-10px" id="close"></div>
+  </aside>
+
+  <script src="/script.js"></script>
+</body>
+</html>
